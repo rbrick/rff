@@ -28,3 +28,26 @@ try (Scanner scanner = new Scanner(new FileReader("input.txt"))) {
     e.printStackTrace();
 }
 ```
+
+# Go
+```go
+import (
+	"bufio"
+	"fmt"
+	"log"
+	"os"
+)
+
+func main() {
+	file, err := os.Open("input.txt")
+
+	if err != nil {
+		log.Fatalln(err)
+	}
+	scanner := bufio.NewScanner(file)
+
+	for scanner.Scan() {
+		fmt.Println(scanner.Text())
+	}
+}
+```
