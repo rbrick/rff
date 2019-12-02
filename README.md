@@ -16,3 +16,15 @@ Files.readAllLines(Paths.get("input.txt"),  Charset.defaultCharset()).forEach(
                 }
       );
 ```
+
+# Java 7
+
+```java
+try (Scanner scanner = new Scanner(new FileReader("input.txt"))) {
+    while (scanner.hasNext()) {
+          System.out.println(scanner.next());
+    }
+} catch (IOException e) {
+    e.printStackTrace();
+}
+```
