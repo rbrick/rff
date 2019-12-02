@@ -51,3 +51,10 @@ func main() {
 	}
 }
 ```
+
+# Python
+```py
+with open("/filepath/filename.txt") as file:
+     for line in file:
+         print(line)
+```
