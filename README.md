@@ -53,6 +53,7 @@ func main() {
 ```
 
 # Python
+Inspired by this tweet: https://twitter.com/aspittel/status/1201514110669770752
 ```py
 with open("/filepath/filename.txt") as file:
      for line in file:
